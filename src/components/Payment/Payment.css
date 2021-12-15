@@ -1,0 +1,17 @@
+.Payment {
+  margin-top: 100px;
+}
+
+.pay__cols {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pay__container2 {
+  margin-top: 50px;
+}
+.delivery__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+

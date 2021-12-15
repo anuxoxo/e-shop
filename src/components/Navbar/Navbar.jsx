@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 
 // Assets
-import logo from '../../assets/logo.png';
+import assets from '../../assets';
 
 // Icons
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
@@ -15,7 +15,7 @@ function Navbar() {
             <ul className="navbar">
                 <div className="left">
                     <a href="/" className="a__logo">
-                        <img src={logo} alt="logo" className="nav__logo" />
+                        <img src={assets.logo} alt="logo" className="nav__logo" />
                         <span className="yellow">E-</span>Shop
                     </a>
                 </div>

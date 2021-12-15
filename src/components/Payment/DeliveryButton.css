@@ -1,0 +1,15 @@
+.delivery__img {
+  height: 35px;
+}
+
+.dBtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding: 10px;
+  padding-right: 18px;
+  margin: 3px;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+}

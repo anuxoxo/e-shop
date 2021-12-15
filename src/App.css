@@ -1,4 +1,18 @@
 .main__container {
   display: flex;
   justify-content: space-around;
+  padding: 0 3%;
 }
+
+.left__container {
+  width: 40%;
+  margin-right: 2%;
+}
+.center__container {
+  width: 30%;
+  margin-right: 2%;
+}
+.right__container {
+  width: 30%;
+}
+ 

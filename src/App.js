@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import Payment from './components/Payment/Payment';
 import Shipping from './components/Shipping/Shipping';
 
 function App() {
@@ -11,11 +12,13 @@ function App() {
       <main className="main__container">
         <div className="left__container">
           <Shipping />
-        </div>
+        </div> 
         <div className="center__container">
-          {/* <Shipping /> */}
+          <Payment />
         </div>
         <div className="right__container">
+          <Payment />
+
           {/* <Shipping /> */}
         </div>
       </main>

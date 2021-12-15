@@ -1,14 +1,11 @@
 .Shipping {
   margin: 40px 0 20px;
 }
-.primary__title,
-.secondary__title {
-  font-weight: normal;
-}
+
 .input__col {
   display: flex;
   justify-content: space-between;
 }
-.left__inputCol {
+/* .left__inputCol {
   flex-grow: 1;
-}
+} */

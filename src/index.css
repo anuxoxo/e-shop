@@ -17,3 +17,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.primary__title,
+.secondary__title {
+  font-weight: normal;
+}
