@@ -11,8 +11,8 @@ function FooterNav() {
             "name": "Merchant Name",
             "description": "Purchase Description",
             "image": assets.logo,
-            "handler": function (response) {
-                alert(response.razorpay_payment_id);
+            "handler": function () {
+                alert("Payment successful!");
             },
             "notes": {
                 "address": "Hello World"
