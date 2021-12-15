@@ -4,6 +4,28 @@ import assets from '../../assets';
 import SmallButton from '../SmallButton/SmallButton';
 
 function FooterNav() {
+    const openCheckout = () => {
+        let options = {
+            "key": process.env.REACT_APP_RAZORPAY_ID,
+            "amount": 50000,
+            "name": "Merchant Name",
+            "description": "Purchase Description",
+            "image": assets.logo,
+            "handler": function (response) {
+                alert(response.razorpay_payment_id);
+            },
+            "notes": {
+                "address": "Hello World"
+            },
+            "theme": {
+                "color": "#4C3F91"
+            }
+        };
+
+        let rzp = new window.Razorpay(options);
+        rzp.open();
+    }
+
     return (
         <div className="FooterNav">
             <div className="left__footNav">
@@ -13,7 +35,7 @@ function FooterNav() {
                         Back
                     </p>
                 </a>
- 
+
             </div>
             <div className="right__footNav">
                 <SmallButton
@@ -21,7 +43,8 @@ function FooterNav() {
                     color="blackOutline" />
                 <SmallButton
                     text="Proceed to Payment"
-                    color="green" />
+                    color="green"
+                    handleClick={openCheckout} />
             </div>
         </div>
     )

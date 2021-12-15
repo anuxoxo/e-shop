@@ -1,19 +1,20 @@
 import React, { useState, useContext } from 'react'
 import { UserContext } from '../../context/userContext';
 import './Shipping.css';
+import assets from '../../assets';
 
 import InputBox from '../InputBox/InputBox';
 import SmallButton from '../SmallButton/SmallButton';
 
 // firebase
 import '../../firebase/firebase';
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import { db } from '../../firebase/db';
 import { setDoc, doc, getDoc } from "firebase/firestore";
 
 const provider = new GoogleAuthProvider();
 const auth = getAuth();
- 
+
 function Shipping() {
     const [shippingData, setShippingData] = useState({
         email: "",
@@ -75,23 +76,49 @@ function Shipping() {
             });
     }
 
+    const logOut = () => {
+        signOut(auth).then(() => {
+            setUser({
+                authorized: false,
+                displayName: "",
+                photoURL: "",
+            })
+        }).catch((error) => {
+            alert("Error signing out user : ", error.message);
+        });
+    }
+
     return (
         <div className="Shipping">
             <div className="topContainer">
                 <h2 className="primary__title">
                     Shipping and Payment
                 </h2>
-                <div className="button__group">
-                    <SmallButton
-                        text="log in"
-                        color="green"
-                        handleClick={login} />
-                    <SmallButton
-                        text="sign up"
-                        color="white"
-                        handleClick={login} />
-                </div>
-            </div>
+                {
+                    user.authorized ? (
+                        <div className="user">
+                            <img src={user.photoURL} alt="user-img" className="userImg" />
+                            <span style={{ marginLeft: "10px" }}>{user.displayName}</span>
+                            <button onClick={logOut} title="Log Out">
+                                <img src={assets.logout} alt="logout" style={{ height: "20px", marginLeft: "10px" }} />
+                            </button>
+                        </div>
+                    ) : (
+
+                        <div className="button__group">
+                            <SmallButton
+                                text="log in"
+                                color="green"
+                                handleClick={login} />
+                            <SmallButton
+                                text="sign up"
+                                color="white"
+                                handleClick={login} />
+                        </div>
+                    )
+                }
+
+            </div >
             <div className="shipping__info">
                 <h3 className="secondary__title">
                     Shipping Information
@@ -147,7 +174,7 @@ function Shipping() {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

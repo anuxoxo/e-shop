@@ -9,9 +9,24 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { IconButton } from '@mui/material';
 
-function Navbar() {
-    const [user] = useContext(UserContext);
+// firebase
+import '../../firebase/firebase';
+import { getAuth, signOut } from "firebase/auth";
+const auth = getAuth();
 
+function Navbar() {
+    const [user, setUser] = useContext(UserContext);
+    const logOut = () => {
+        signOut(auth).then(() => {
+            setUser({
+                authorized: false,
+                displayName: "",
+                photoURL: "",
+            })
+        }).catch((error) => {
+            alert("Error signing out user : ", error.message);
+        });
+    }
     return (
         <div className="nav">
             <ul className="navbar">
@@ -35,13 +50,15 @@ function Navbar() {
                     <IconButton color="inherit">
                         <ShoppingCartOutlinedIcon fontSize="large" />
                     </IconButton>
-                    <IconButton color="inherit">
-                        {(user.authorized) ? (
+                    {(user.authorized) ? (
+                        <button onClick={logOut} title="Log Out">
                             <img src={user.photoURL} alt="user-img" className="userImg" />
-                        ) : (
+                        </button>
+                    ) : (
+                        <IconButton color="inherit">
                             <PersonOutlineOutlinedIcon fontSize="large" />
-                        )}
-                    </IconButton>
+                        </IconButton>
+                    )}
                 </div>
             </ul>
         </div >

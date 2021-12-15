@@ -22,3 +22,19 @@ a {
 .secondary__title {
   font-weight: normal;
 }
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.userImg {
+  width: 38px;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
