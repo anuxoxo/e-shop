@@ -1,7 +1,8 @@
 .yellow {
   color: rgb(255, 197, 6);
 }
-nav {
+
+.nav {
   width: 100%;
 }
 
@@ -10,16 +11,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px 15px 50px;
+  padding: 0 2% 10px;
   font-size: 20px;
   border: 1px solid lightgray;
 }
 
 .navbar li {
   list-style-type: none;
-  padding: 30px 25px;
+  padding: 20px 25px;
 }
-.a__logo {
+
+.navItem a:first-child {
   display: flex;
   align-items: center;
 }
@@ -29,9 +31,12 @@ nav {
   height: auto;
 }
 
-.left,
-.right,
-.center {
+.navItem {
   display: flex;
   align-items: center;
+}
+
+.userImg {
+  width: 38px;
+  border-radius: 50%;
 }

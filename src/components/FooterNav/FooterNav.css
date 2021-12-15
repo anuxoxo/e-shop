@@ -1,0 +1,14 @@
+.FooterNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 3%;
+}
+.back__icon {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.left__footNav a {
+  display: flex;
+  align-items: center;
+}

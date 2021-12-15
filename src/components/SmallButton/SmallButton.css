@@ -5,7 +5,6 @@
   padding: 18px 40px;
   border-radius: 25px;
   cursor: pointer;
-  margin: 30px 0;
   margin-right: 10px;
 }
 
@@ -17,4 +16,9 @@
 .btn__white {
   background: white;
   border: 2px solid lightgray;
+}
+
+.btn__blackOutline {
+  background: white;
+  border: 2px solid black;
 }
