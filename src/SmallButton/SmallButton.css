@@ -1,0 +1,20 @@
+.btn__primary {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 18px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 30px 0;
+  margin-right: 10px;
+}
+
+.btn__green {
+  color: white;
+  background: #7ad0a7;
+}
+
+.btn__white {
+  background: white;
+  border: 2px solid lightgray;
+}

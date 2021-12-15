@@ -1,0 +1,15 @@
+.inputBox,
+select {
+  padding: 17px;
+  padding-right: 80px;
+  border-radius: 25px;
+  border: none;
+  border: 2px solid lightgray;
+  display: block;
+  margin: 0 10px 20px 0;
+  outline: none;
+}
+
+select {
+  width: 95%;
+}

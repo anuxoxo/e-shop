@@ -2,9 +2,7 @@
   color: rgb(255, 197, 6);
 }
 nav {
-  position: fixed;
   width: 100%;
-  top: 0;
 }
 
 .navbar {
