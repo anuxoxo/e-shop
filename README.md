@@ -5,7 +5,7 @@ I have used
 - material-ui for icons.
 - Firebase for login functionality.
 - razorpay test mode for payment purposes. 
-- Refer [this](https://razorpay.com/docs/payments/payments/test-card-upi-details/) to generate test card details.
+Refer [this](https://razorpay.com/docs/payments/payments/test-card-upi-details/) to generate test card details.
 
 # Two ways of viewing the web app
 
