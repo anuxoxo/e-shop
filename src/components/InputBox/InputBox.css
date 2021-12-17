@@ -13,3 +13,10 @@ select {
 select {
   width: 95%;
 }
+
+@media screen and (max-width: 1440px) {
+  .inputBox {
+    width: 65%;
+  }
+
+}

@@ -89,4 +89,9 @@
     width: 90%;
     margin: 0 auto;
   }
+  .free__shipping {
+    display: flex;
+    align-items: center;
+    margin: 5% 5%;
+  }
 }

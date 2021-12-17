@@ -1,21 +1,20 @@
 .payment__btn {
-  padding: 0 30px;
-  display: inline-block;
+  margin: 5% 2%;
   border: 1px solid lightgray;
   border-radius: 30px;
-  width: 13%;
-  height: 9%;
-  margin: 5px;
-} 
+  padding: 2% 4%;
+  margin: 1% 0.7%;
+}
 
 .payment__btn:active {
   border-color: rgb(255, 197, 6);
 }
+
 .payment__img {
-  width: 100%;
-  height: 100%;
+  height: 40px;
 }
 
 .payment__btn a {
   display: flex;
+  padding: 0 30px;
 }

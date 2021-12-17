@@ -6,7 +6,6 @@ function PaymentButton({ imgSrc }) {
         <div className="payment__btn">
             <a href="/">
                 <img className="payment__img" src={imgSrc} alt="payment-method" />
-                {/* $ 20.00 */}
             </a>
         </div>
     )

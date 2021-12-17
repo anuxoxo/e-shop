@@ -40,4 +40,7 @@
   .navbar {
     flex-direction: column;
   }
+  .navbar li {
+    padding: 20px 10px;
+  }
 }

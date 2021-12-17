@@ -45,10 +45,10 @@ function Navbar() {
 
                 <div className="navItem">
                     <IconButton color="inherit"  >
-                        <SearchOutlinedIcon fontSize="large" />
+                        <SearchOutlinedIcon fontSize="large" sx={{ fontSize: "25px" }} />
                     </IconButton>
                     <IconButton color="inherit">
-                        <ShoppingCartOutlinedIcon fontSize="large" />
+                        <ShoppingCartOutlinedIcon fontSize="large" sx={{ fontSize: "25px" }} />
                     </IconButton>
                     {(user.authorized) ? (
                         <button onClick={logOut} title="Log Out">
@@ -56,7 +56,7 @@ function Navbar() {
                         </button>
                     ) : (
                         <IconButton color="inherit">
-                            <PersonOutlineOutlinedIcon fontSize="large" />
+                            <PersonOutlineOutlinedIcon fontSize="large" sx={{ fontSize: "25px" }} />
                         </IconButton>
                     )}
                 </div>

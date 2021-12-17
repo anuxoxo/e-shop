@@ -5,7 +5,7 @@ function DeliveryButton({ imgSrc, cost }) {
     return (
         <div className="dBtn">
             <a href="/">
-                <img className="delivery__img" src={imgSrc} alt="payment-method" />
+                <img className="delivery__img" src={imgSrc} alt="delivery-method" />
                 $ {cost}
             </a>
         </div>

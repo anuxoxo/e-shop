@@ -12,7 +12,7 @@ function InputBox({ placeholderText, type = "text", inputText, setInputText, nam
         console.log(inputText)
     }
     return (
-        <div>
+        <div className="input__boxContainer">
             <input
                 className="inputBox"
                 name={name}

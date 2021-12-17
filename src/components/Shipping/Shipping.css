@@ -1,5 +1,6 @@
 .Shipping {
-  margin: 20px 0;
+  width: 100%;
+  margin: 2%;
 }
 
 .input__col {
@@ -17,5 +18,4 @@
   .input__col {
     flex-direction: column;
   }
-
 }
