@@ -1,18 +1,13 @@
 .main__container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2%;
   padding: 0 3%;
 }
 
-.left__container {
-  width: 40%;
-  margin-right: 2%;
+@media screen and (max-width: 1440px) {
+  .main__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
-.center__container {
-  width: 30%;
-  margin-right: 2%;
-}
-.right__container {
-  width: 30%;
-}
-

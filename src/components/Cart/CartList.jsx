@@ -6,7 +6,7 @@ import assets from '../../assets';
 
 function CartList() {
     return (
-        <div>
+        <div className="Cart__List">
             <div className="cartIcon__group">
                 <div className="cart__icon">
                     <img src={assets.cart} alt="cart__icon" />
@@ -17,23 +17,26 @@ function CartList() {
                     <img src={assets.truck} alt="ship__icon" />
                 </div>
             </div>
-            <h3 className="secondary__title">
-                Your cart
-            </h3>
+
             <div className="cart__item">
+                <h3 className="secondary__title">
+                    Your cart
+                </h3>
                 <CartItem imgSrc={assets.prod1} />
                 <CartItem imgSrc={assets.prod1} />
-                <div className="total__cost">
-                    <p>Total cost</p>
-                    <p>$ 159,98</p>
+                <div className="cost__container">
+                    <div className="total__cost">
+                        <p>Total cost</p>
+                        <p>$ 159,98</p>
+                    </div>
                 </div>
-            </div>
-            <div className="free__shipping">
-                <div className="ship__truck">
-                    <img src={assets.truck} alt="ship-truck" />
-                </div>
-                <div className="ship__text">
-                    You are <strong>$30.02</strong> away from free shipping!
+                <div className="free__shipping">
+                    <div className="ship__truck">
+                        <img src={assets.truck} alt="ship-truck" />
+                    </div>
+                    <div className="ship__text">
+                        You are <strong>$30.02</strong> away from free shipping!
+                    </div>
                 </div>
             </div>
         </div>

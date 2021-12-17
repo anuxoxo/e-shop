@@ -124,7 +124,7 @@ function Shipping() {
                     Shipping Information
                 </h3>
                 <div className="input__col">
-                    <div className="left__inputCol">
+                    <div className="each_inp_col">
                         <InputBox
                             placeholderText="Email"
                             type="email"
@@ -146,7 +146,7 @@ function Shipping() {
                             setInputText={setShippingData}
                             type="tel" />
                     </div>
-                    <div className="left__inputCol">
+                    <div className="each_inp_col">
                         <InputBox placeholderText="Address"
                             name="addr"
                             inputText={shippingData}

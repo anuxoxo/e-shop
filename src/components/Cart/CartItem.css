@@ -1,4 +1,5 @@
 .item__card {
+  margin: 1% 0;
   display: flex;
   align-items: center;
 }
@@ -6,11 +7,13 @@
 .product__details {
   display: flex;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 4%;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .product__img img {
-  height: 60px;
+  height: 10vh;
   border-radius: 100%;
 }
 
@@ -21,4 +24,13 @@
 .prod__id {
   color: lightgray;
   margin-bottom: -3px;
+}
+
+@media screen and (max-width: 1440px) {
+  .prod__name {
+    width: 100%;
+  }
+  .product__img img {
+    height: 15vh;
+  }
 }

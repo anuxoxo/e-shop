@@ -4,8 +4,18 @@
 
 .input__col {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
 .button__group {
   margin: 7% 0;
+}
+
+/* .each_inp_col {
+  padding-right: 2%;
+} */
+@media screen and (max-width: 1440px) {
+  .input__col {
+    flex-direction: column;
+  }
+
 }

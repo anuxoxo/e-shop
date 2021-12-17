@@ -3,12 +3,27 @@
   justify-content: space-between;
   padding: 2% 3%;
 }
+
 .back__icon {
   height: 30px;
-  margin-right: 20px;
+  margin-right: 1.1rem;
 }
 
 .left__footNav a {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .FooterNav {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 2%;
+  }
+  .right__footNav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
 }
